@@ -2,7 +2,7 @@ from django.db import models
 from authentication.models import Account
 
 class Post(models.Model):
-    author = models.ForeignKey(Account)
+    author = models.ForeignKey(Account, null=True)
     content = models.TextField()
 
     created_at = models.DateTimeField(auto_now_add=True)

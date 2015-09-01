@@ -9,7 +9,9 @@
             'config',
             'routes',
             'authentication',
-            'layout'
+            'layout',
+            'posts',
+            'utils'
 
         ]);
 

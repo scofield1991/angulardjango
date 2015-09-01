@@ -1,10 +1,10 @@
 __author__ = 'user'
 from rest_framework import serializers
-from  authentication.serializers import AccountSerializer
+from authentication.serializers import AccountSerializer
 from posts.models import Post
 
 class PostSerializer(serializers.ModelSerializer):
-    author = AccountSerializer(read_only=True, required=False)
+    author = AccountSerializer(required=False, read_only=True)
 
     class Meta:
         model = Post
